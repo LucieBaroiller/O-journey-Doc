@@ -5,15 +5,15 @@
   <meta name="description" content="O'Journey is a simple interactive trip planner">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link href="assets/bootstrap.min.css?v=1697489052848" rel="stylesheet" media="screen">
-  <link href="assets/prism.css?v=1697489052848" rel="stylesheet" />
-  <link href="assets/prism-toolbar.css?v=1697489052848" rel="stylesheet" />
-  <link href="assets/prism-diff-highlight.css?v=1697489052848" rel="stylesheet" />
-  <link href="assets/main.css?v=1697489052848" rel="stylesheet" media="screen, print">
-  <link href="assets/favicon.ico?v=1697489052848" rel="icon" type="image/x-icon">
-  <link href="assets/apple-touch-icon.png?v=1697489052848" rel="apple-touch-icon" sizes="180x180">
-  <link href="assets/favicon-32x32.png?v=1697489052848" rel="icon" type="image/png" sizes="32x32">
-  <link href="assets/favicon-16x16.png?v=1697489052848" rel="icon" type="image/png" sizes="16x16">
+  <link href="assets/bootstrap.min.css?v=1697491361178" rel="stylesheet" media="screen">
+  <link href="assets/prism.css?v=1697491361178" rel="stylesheet" />
+  <link href="assets/prism-toolbar.css?v=1697491361178" rel="stylesheet" />
+  <link href="assets/prism-diff-highlight.css?v=1697491361178" rel="stylesheet" />
+  <link href="assets/main.css?v=1697491361178" rel="stylesheet" media="screen, print">
+  <link href="assets/favicon.ico?v=1697491361178" rel="icon" type="image/x-icon">
+  <link href="assets/apple-touch-icon.png?v=1697491361178" rel="apple-touch-icon" sizes="180x180">
+  <link href="assets/favicon-32x32.png?v=1697491361178" rel="icon" type="image/png" sizes="32x32">
+  <link href="assets/favicon-16x16.png?v=1697491361178" rel="icon" type="image/png" sizes="16x16">
 </head>
 
 <body class="container-fluid">
@@ -189,7 +189,7 @@
       <div class="tab-content">
       {{#each article.examples}}
         <div class="tab-pane{{#ifCond @index '==' 0}} active{{/ifCond}}" id="examples-{{../id}}-{{@index}}">
-          <pre  class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -366,7 +366,7 @@
       <div class="tab-content">
       {{#each params.examples}}
         <div class="tab-pane{{#ifCond @index '==' 0}} active{{/ifCond}}" id="{{../section}}-examples-{{../id}}-{{@index}}">
-        <pre  class="backgroundblack"
+        <pre class="backgroundblack"
           data-type="{{type}}"
           data-prismjs-copy="{{__ "Copy"}}"
           data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -589,7 +589,7 @@
               {{__ "Response"}}
               <button class="btn btn-default btn-xs pull-right sample-request-clear">X</button>
             </h3>
-            <pre  class="backgroundblack"
+            <pre class="backgroundblack"
               data-type="json"
               data-prismjs-copy="{{__ "Copy"}}"
               data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -636,7 +636,7 @@
     {{/if}}
 
     <span class="method meth-{{toLowerCase compare.type}}">{{compare.type}}</span>
-    <pre  class="backgroundblack"
+    <pre class="backgroundblack"
       data-type="{{toLowerCase article.type}}" 
       data-prismjs-copy="{{__ "Copy"}}"
       data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -673,7 +673,7 @@
 
       {{#if typeSame}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="compare-examples-{{../article.id}}-{{index}}">
-          <pre  class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -684,7 +684,7 @@
 
       {{#if typeIns}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="compare-examples-{{../article.id}}-{{index}}">
-          <pre  class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -695,7 +695,7 @@
 
       {{#if typeDel}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="compare-examples-{{../article.id}}-{{index}}">
-          <pre  class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{compare.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -862,7 +862,7 @@
 
       {{#if typeSame}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="{{../section}}-compare-examples-{{../article.id}}-{{index}}">
-          <pre  class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -873,7 +873,7 @@
 
       {{#if typeIns}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="{{../section}}-compare-examples-{{../article.id}}-{{index}}">
-          <pre  class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -884,8 +884,7 @@
 
       {{#if typeDel}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="{{../section}}-compare-examples-{{../article.id}}-{{index}}">
-          <pre 
-          class="backgroundblack"
+          <pre class="backgroundblack"
             data-type="{{compare.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -1043,6 +1042,6 @@
   </div>
 </div>
 
-<script src="assets/main.bundle.js?v=1697489052848"></script>
+<script src="assets/main.bundle.js?v=1697491361178"></script>
 </body>
 </html>
