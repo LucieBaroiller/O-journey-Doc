@@ -1,3 +1,4 @@
+.backgroundblack{background-color:black!important;font-weight:bold!important;color:whitesmoke!important;font-size:1.8rem!important;}
 pre.diff-highlight > code .token.deleted:not(.prefix),
 pre > code.diff-highlight .token.deleted:not(.prefix) {
 	background-color: rgba(255, 0, 0, .1);

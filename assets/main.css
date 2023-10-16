@@ -18,6 +18,12 @@
   --meth-delete: #ed0039;
   --red: #dc3545;
 }
+.backgroundblack {
+  background-color: black !important;
+  font-weight: bold !important;
+  color: whitesmoke !important;
+  font-size: 1.8rem !important;
+}
 
 .color-primary {
   color: var(--primary);
@@ -407,12 +413,7 @@ del {
   text-decoration: line-through;
 }
 
-pre {
-  background-color: black !important;
-  font-weight: bold !important;
-  color: whitesmoke !important;
-  font-size: 1.8rem !important;
-}
+
 
 pre.ins {
   background-color: #60d060;

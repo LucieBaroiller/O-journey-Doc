@@ -155,7 +155,7 @@
       <p>{{{nl2br article.description}}}</p>
     {{/if}}
     <span class="method meth-{{toLowerCase article.type}}">{{article.type}}</span>
-    <pre 
+    <pre class="backgroundblack"
       data-type="{{toLowerCase article.type}}"
       data-prismjs-copy="{{__ "Copy"}}"
       data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -189,7 +189,7 @@
       <div class="tab-content">
       {{#each article.examples}}
         <div class="tab-pane{{#ifCond @index '==' 0}} active{{/ifCond}}" id="examples-{{../id}}-{{@index}}">
-          <pre 
+          <pre  class="backgroundblack"
             data-type="{{type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -366,7 +366,7 @@
       <div class="tab-content">
       {{#each params.examples}}
         <div class="tab-pane{{#ifCond @index '==' 0}} active{{/ifCond}}" id="{{../section}}-examples-{{../id}}-{{@index}}">
-        <pre 
+        <pre  class="backgroundblack"
           data-type="{{type}}"
           data-prismjs-copy="{{__ "Copy"}}"
           data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -589,7 +589,7 @@
               {{__ "Response"}}
               <button class="btn btn-default btn-xs pull-right sample-request-clear">X</button>
             </h3>
-            <pre 
+            <pre  class="backgroundblack"
               data-type="json"
               data-prismjs-copy="{{__ "Copy"}}"
               data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -636,7 +636,7 @@
     {{/if}}
 
     <span class="method meth-{{toLowerCase compare.type}}">{{compare.type}}</span>
-    <pre 
+    <pre  class="backgroundblack"
       data-type="{{toLowerCase article.type}}" 
       data-prismjs-copy="{{__ "Copy"}}"
       data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -673,7 +673,7 @@
 
       {{#if typeSame}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="compare-examples-{{../article.id}}-{{index}}">
-          <pre 
+          <pre  class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -684,7 +684,7 @@
 
       {{#if typeIns}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="compare-examples-{{../article.id}}-{{index}}">
-          <pre 
+          <pre  class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -695,7 +695,7 @@
 
       {{#if typeDel}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="compare-examples-{{../article.id}}-{{index}}">
-          <pre 
+          <pre  class="backgroundblack"
             data-type="{{compare.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -862,7 +862,7 @@
 
       {{#if typeSame}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="{{../section}}-compare-examples-{{../article.id}}-{{index}}">
-          <pre 
+          <pre  class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -873,7 +873,7 @@
 
       {{#if typeIns}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="{{../section}}-compare-examples-{{../article.id}}-{{index}}">
-          <pre 
+          <pre  class="backgroundblack"
             data-type="{{source.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"
@@ -885,6 +885,7 @@
       {{#if typeDel}}
         <div class="tab-pane{{#ifCond index '==' 0}} active{{/ifCond}}" id="{{../section}}-compare-examples-{{../article.id}}-{{index}}">
           <pre 
+          class="backgroundblack"
             data-type="{{compare.type}}"
             data-prismjs-copy="{{__ "Copy"}}"
             data-prismjs-copy-error="{{__ "Press Ctrl+C to copy"}}"

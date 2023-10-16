@@ -3,11 +3,12 @@
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
+ .backgroundblack{background-color:black!important;font-weight:bold!important;color:whitesmoke!important;font-size:1.5rem!important;}
 
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
-	background: none;
+	background-color: black;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
