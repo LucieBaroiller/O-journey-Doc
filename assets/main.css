@@ -390,6 +390,9 @@ ins {
   color: #000000;
 }
 
+.main-title {
+  font-size: 4.5rem !important;
+}
 del {
   background: #f05050;
   color: #000000;
@@ -402,6 +405,13 @@ del {
 .label-del {
   background-color: #f05050;
   text-decoration: line-through;
+}
+
+pre {
+  background-color: black !important;
+  font-weight: bold !important;
+  color: whitesmoke !important;
+  font-size: 1.8rem !important;
 }
 
 pre.ins {
@@ -564,6 +574,21 @@ tr.del td {
  * ------------------------------------------------------------------------------------------ */
 ul.nav-tabs {
   margin: 0;
+}
+
+h1{
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+}
+h2 {
+  font-size: 1.8rem;
+}
+
+.nav-tabs>li.active>a {
+  border: 1px solid #777;
+  font-size: 1.4rem;
+  font-weight: 800;
+
 }
 
 p.deprecated span{
